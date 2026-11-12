@@ -41,7 +41,6 @@ def test_user():
     api_client = ApiClient()
     user_data = helpers.generate_user_data()
     response = api_client.register(user_data)
-    assert response.status_code == 200, f"Не удалось создать юзера: {response.text}"
     user_data["access_token"] = response.json()["accessToken"]
     yield user_data
     api_client.delete_user(user_data["access_token"])

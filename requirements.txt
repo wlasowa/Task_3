@@ -1,0 +1,6 @@
+allure-pytest==2.16.2
+allure-python-commons==2.16.2
+pytest==9.0.3
+requests==2.34.2
+ruff==0.16.8
+selenium==4.49.0
